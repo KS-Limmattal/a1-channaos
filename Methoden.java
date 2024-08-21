@@ -1,9 +1,9 @@
  
 public class Methoden {
 
-    public static int round(int zahl){
+    public static int round(int number){
         // TODO: implementiere hier deine Lösung für a)
-        return 0; // diese Zeile darf verändert werden :-)
+        return ((number + 50) / 100) * 100 ;
     }
 
     public static void hours(int seconds){
