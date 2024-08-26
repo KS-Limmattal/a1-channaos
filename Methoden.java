@@ -7,10 +7,27 @@ public class Methoden {
     }
 
     public static void hours(int seconds){
-        // TODO: implementiere hier deine Lösung für b)
+        // TODO: implementiere hier deine Lösung für b
+        int hours = seconds / 3600 ; 
+        int minutes = (seconds % 3600) / 60 ;
+        seconds = seconds % 60 ; 
+        System.out.println(hours + ":" + minutes + ":" + seconds);
     }
     
     // TODO: Schreibe hier eine Methode für die Aufgabe c)
+    public static void sort(int a, int b, int c) {
+      if (a>b && b>c) {
+        sort(a,b,c);
+       } else if (a>b && c>b) {
+            sort(a,c,b);
+       } else if (a<b && )
+
+
+            
+        
+        
+      }  
+    }
     
     public static int distance(double x1, double y1, double x2, double y2){
         // TODO: implementiere hier deine Lösung für d)
@@ -28,8 +45,12 @@ public class Methoden {
 
         // Test-Code für Teilaufgabe b)
         System.out.println("Aufgabe b)");
+        hours(7300);
+        hours(1234);
+        hours(60);
+        hours(100);
+        hours(0);
         // TODO: Schreibe Testcode für die Aufgabe
-        System.out.println();
 
         // Test-Code für Teilaufgabe c)
         System.out.println("Aufgabe c)");
