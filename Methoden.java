@@ -16,17 +16,21 @@ public class Methoden {
     
     // TODO: Schreibe hier eine Methode für die Aufgabe c)
     public static void sort(int a, int b, int c) {
-      if (a>b && b>c) {
-        sort(a,b,c);
-       } else if (a>b && c>b) {
-            sort(a,c,b);
-       } else if (a<b && )
-
-
-            
-        
-        
-      }  
+      if (a<b && b<c) {
+        System.out.println(a + " " + b + " " + c);
+       } else if (a<b && b<c) {
+            System.out.println(a+ " " + c + " " + b);
+       } else if (b<a && a<c ) {
+        System.out.println(b + " " + a + " "+ c);
+       } else if (b<a && a<c) {
+        System.out.println( b + " " + c + " " + a);
+       } else if (c<b && b<a) {
+        System.out.println(c + " " + b + " "+ a);
+       } else if ( c<a && a<b ){
+        System.out.println(c + " " + a + " " + b);  
+      } else {
+        System.out.println( "not handled: " + a + " " + b + " " + c);
+      }
     }
     
     public static int distance(double x1, double y1, double x2, double y2){
@@ -55,14 +59,14 @@ public class Methoden {
         // Test-Code für Teilaufgabe c)
         System.out.println("Aufgabe c)");
         // Test-Code ent-kommentieren, sobald die Funktion programmiert ist
-        // sort(1, 2, 3);
-        // sort(1, 3, 2);
-        // sort(2, 1, 3);
-        // sort(2, 3, 1);
-        // sort(3, 1, 2);
-        // sort(3, 2, 1);
-        // sort(1, 3, 3);
-        // sort(-1, -1, -1));
+        sort(1, 2, 3);
+        sort(1, 3, 2);
+        sort(2, 1, 3);
+        sort(2, 3, 1);
+        sort(3, 1, 2);
+        sort(3, 2, 1);
+        sort(1, 3, 3);
+        sort(-1, -1, -1);
         System.out.println();
 
         // Test-Code für Teilaufgabe d)
