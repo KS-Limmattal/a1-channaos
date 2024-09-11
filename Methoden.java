@@ -37,9 +37,9 @@ public class Methoden {
       }
     }
     
-    public static int distance(double x1, double y1, double x2, double y2){
+    public static double distance(double x1, double y1, double x2, double y2){
         // TODO: implementiere hier deine Lösung für d)
-        return 0; // diese Zeile darf verändert werden
+        return (Math.sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2))) ;
     }
 
         public static void main(String[] args){
@@ -76,7 +76,9 @@ public class Methoden {
         // Test-Code für Teilaufgabe d)
         System.out.println("Aufgabe d)");
         // TODO: Schreibe Testcode für die Aufgabe
-        System.out.println();
+        System.out.println(distance( 3, 4, 5, 6));
+        System.out.println(distance( 2, 2, 4, 4));
+        System.out.println(distance(5, 3, 7, 2));
     }
     
 }
