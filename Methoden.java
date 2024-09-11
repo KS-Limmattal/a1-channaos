@@ -16,26 +16,30 @@ public class Methoden {
     
     // TODO: Schreibe hier eine Methode für die Aufgabe c)
     public static void sort(int a, int b, int c) {
-      if (a<b && b<c) {
-        System.out.println(a + " " + b + " " + c);
-       } else if (a<b && b<c) {
-            System.out.println(a+ " " + c + " " + b);
-       } else if (b<a && a<c ) {
+      if (b<a && c<b) {
+        System.out.println(c + " " + b + " " + a);
+       } else if (a<b && c<a) {
+            System.out.println(c + " " + a + " " + b);
+       } else if (b<c && a<b ) {
+        System.out.println(a + " " + b + " "+ c);
+       } else if (c<b && a<c) {
+        System.out.println( a + " " + c + " " + b);
+       } else if (a<c && b<a) {
         System.out.println(b + " " + a + " "+ c);
-       } else if (b<a && a<c) {
-        System.out.println( b + " " + c + " " + a);
-       } else if (c<b && b<a) {
-        System.out.println(c + " " + b + " "+ a);
-       } else if ( c<a && a<b ){
-        System.out.println(c + " " + a + " " + b);  
+       } else if ( c<a && b<c ){
+        System.out.println(b + " " + c + " " + a);  
+       } else if ( a==b && b==c){
+        System.out.println(a + " " + b + " " + c);
+       }else if ( b==c && a<b ){
+        System.out.println(a + " " + b + " " + c);
       } else {
         System.out.println( "not handled: " + a + " " + b + " " + c);
       }
     }
     
-    public static int distance(double x1, double y1, double x2, double y2){
+    public static double distance(double x1, double y1, double x2, double y2){
         // TODO: implementiere hier deine Lösung für d)
-        return 0; // diese Zeile darf verändert werden
+        return (Math.sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2))) ;
     }
 
         public static void main(String[] args){
@@ -72,7 +76,9 @@ public class Methoden {
         // Test-Code für Teilaufgabe d)
         System.out.println("Aufgabe d)");
         // TODO: Schreibe Testcode für die Aufgabe
-        System.out.println();
+        System.out.println(distance( 3, 4, 5, 6));
+        System.out.println(distance( 2, 2, 4, 4));
+        System.out.println(distance(5, 3, 7, 2));
     }
     
 }
